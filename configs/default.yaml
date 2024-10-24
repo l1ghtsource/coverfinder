@@ -1,0 +1,34 @@
+training:
+  num_epochs: 10
+  batch_size: 128
+  learning_rate: 5e-5
+  weight_decay: 1e-2
+  max_len: 4096
+
+data:
+  base_path: '/cover_data'
+  train_path: '/cover_data/data/train'
+  test_path: '/cover_data/data/test'
+  test_ids_path: '/cover_data/test_ids.npy'
+  train_cliques_path: '/cover_data/train_cliques.npy'
+  val_cliques_path: '/cover_data/val_cliques.npy'
+  cliques_file: '/cover_data/cliques2versions.tsv'
+
+dataloader:
+  num_workers: 4
+  shuffle: true
+  drop_last: true
+
+dataloader_val:
+  num_workers: 4
+  shuffle: false
+  drop_last: false
+
+loss:
+  margin_min: 0.1
+  margin_max: 0.5
+  adjust_margin: true
+  hard_negative_ratio: 0.5
+
+wandb:
+  project: 'COVER_FINDER'

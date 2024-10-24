@@ -1,0 +1,8 @@
+model:
+  name: 'CONFORMERV2'
+  input_dim: 50
+  hidden_dim: 768
+  num_layers: 8
+  num_heads: 12
+  dropout: 0.1
+  ffn_dim: 3072 # hidden_dim * 4

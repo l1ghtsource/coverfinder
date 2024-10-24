@@ -1,0 +1,7 @@
+model:
+  name: 'TRANSFORMER'
+  input_dim: 50
+  hidden_dim: 768
+  num_layers: 8
+  num_heads: 12
+  dropout: 0.1
